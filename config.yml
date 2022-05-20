@@ -1,0 +1,33 @@
+---
+pump_config:
+  excel_filename: "Example.xlsx" #should include .xlsx suffix and be located in inputs folder
+  aor_range:
+    - 0.5
+    - 1.25
+  por_range:
+    - 0.75
+    - 1.2
+  data_speeds: #should aim for at least 5 different speeds. These wont be plotted (those are defined in plot_config seciton), but are used to build the aor/por curves
+    - 66
+    - 70
+    - 80
+    - 90
+    - 100
+  num_pumps: 4
+  aor_por_fit_degree: 2 #sometimes the AOR/POR fill can be a poor fit for the pump curve. Increasing the degree of this fit may improve this.
+plot_config:
+  figure_height: 8 # inches
+  figure_width: 14 # inches
+  flow_units: L/s
+  head_units: m
+  plot_speeds: #just min and max speed looks best
+    - 66
+    - 100
+  plot_title: Example Pump
+  ymax:  80
+  xmax: 3000
+save_config:
+  save_dataframe_to_excel: true
+  excel_save_filename: Example_pump
+  save_figure: true
+  figure_save_name: Example_pump
