@@ -85,3 +85,7 @@ Finally if the config file specifies to save the figure it will be saved in the 
 # Running the script
 
 The raw excel file should be loaded into the inputs folder. The build_pump_dataframe file should then be run, followed by the plotting file.
+
+# Pump Curve Example Image
+
+![alt text](example/Example_pump.png)
