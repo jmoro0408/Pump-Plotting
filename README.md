@@ -3,6 +3,10 @@
 This script creates a nicely formatted pump curve pdf from an input excel file.
 The script can be configured to plot multiple pumps in parallel, with various speeds and allowable and preferable operating range (AOR/POR) areas.
 
+
+![alt text](example/Example_pump.png)
+
+
 The script is split into three functions located in the src folder:
 
 *  helper_funcs: small modules containing functions that are common to both other files.
@@ -85,7 +89,3 @@ Finally if the config file specifies to save the figure it will be saved in the 
 # Running the script
 
 The raw excel file should be loaded into the inputs folder. The build_pump_dataframe file should then be run, followed by the plotting file.
-
-# Pump Curve Example Image
-
-![alt text](example/Example_pump.png)
